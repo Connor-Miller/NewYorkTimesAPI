@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  overflow: hidden;
+}
+.page {
+
+}
+.header {
+  background-color: #375cd4;
+  padding: 50px;
+  border: solid #fff 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+.title {
+  font-family: rockwell, bodoni MT, Georgia, sans-serif;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.submitButton {
+
+  background-color: #404040;
+  text-align: center;
+  padding: 10px;
+  font-family: rockwell, bodoni, Georgia, sans-serif;
+  color: #8becf0;
+  border: solid #111 3px;
+  border-radius: 5px;
+}
+.submitButton:hover {
+  background-color: #111;
+}
+.enterText {
+  font-family: rockwell, bodoni, Georgia, sans-serif;
+  font-size: 25px;
+  border: solid #111 3px;
+  border-radius: 5px;
+}
+.enterTopic {
+  border: none;
+}
+.copyright {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+
+.articleDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: rockwell, bodoni, Georgia, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  align-items:flex-start;
+  padding-bottom: 20px;
+}
+.individualArticle {
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #dcddde;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col2,
+.col1 {
+  border: solid #111 1px;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.footer {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+}
+a {
+  display: block;
+  padding: 8px;
+  background-color: #404040;
+  border-radius: 3px;
+  border: 1px solid #111;
+  color: #d1ddff;
+}
+h5 {
+  margin: 10px;
+}
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+    .page {
+      width: 375px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #dee3ac;
+  }
+  .page {
+    overflow: hidden;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+
+  }
+  .page {
+    width: 900px;
+    margin: 0 auto;
+
+  }
+  .col1,
+  .col2 {
+    width: 45%;
+    background-color: #375cd4;
+  }
+}
